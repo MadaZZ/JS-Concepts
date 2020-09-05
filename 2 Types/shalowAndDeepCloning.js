@@ -1,4 +1,4 @@
-// We use Object.assign() to clone one object to another. But what is there is an object inside an object?
+// We use Object.assign() to clone one object to another. But what if there is an object inside an object?
 
 // ** Shallow cloning ** \\
 var Object1 = { a: 'a', b: 'b', c: {inside: 'this is a deep reference'}};
