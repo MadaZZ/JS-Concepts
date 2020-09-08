@@ -8,9 +8,9 @@ function heavyDuty(item) {
     return bigArray[item]
 }
 
-heavyDuty(699)
-heavyDuty(699)
-heavyDuty(699)
+console.log(heavyDuty(699));
+console.log(heavyDuty(699));
+console.log(heavyDuty(699));
 
 /**
  * Now if we want to use the bigArray without storing it in a global variable.
@@ -19,12 +19,12 @@ heavyDuty(699)
 function heavyDuty2() {
     const bigArray = new Array(7000).fill('🌚')
     console.log('created Again!')
-    return function (item) {
+    return (item) => {
         return bigArray[item]
     }
 }
 
 const getHeavyDuty = heavyDuty2();
-getHeavyDuty(11)
-getHeavyDuty(500)
-getHeavyDuty(123)
+console.log(getHeavyDuty(11))
+console.log(getHeavyDuty(11))
+console.log(getHeavyDuty(11))
