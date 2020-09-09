@@ -1,4 +1,10 @@
-/**
+/*
+  Closures allow a function to access variables from an enlosing scope or outerscope environment
+  even after it leaves the scope in which it was written.
+ */ 
+
+
+ /*
  * Lexical scope of c() is different than a() and b()
  * Even after a() and b() are popped out of the callstack, variables are preserved
  */ 
