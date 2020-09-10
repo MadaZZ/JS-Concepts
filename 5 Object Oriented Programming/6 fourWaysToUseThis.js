@@ -26,7 +26,7 @@ const person3 = {
   age: 40,
   hi: function () {
     console.log('hi' + this.setTimeout)
-  }.bind(window)
+  }.bind(window) // Will throw an error with node, run on browser
 }
 
 person3.hi()
