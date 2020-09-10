@@ -1,4 +1,4 @@
-/** STEP: Factory Functions
+/** STEP2: Factory Functions
  * These are the functions that create objects
 */
 
