@@ -8,15 +8,15 @@
 
 const compose = (f, g) => (a) => f(g(a))
 const pipe = (f, g) => (a) => g(f(a))
-const multiplyBy3AndAbsolute = compose((num) => num*3, Math.abs)
-const absoluteAndMultiplyBy3 = pipe((num) => num*3, Math.abs)
+const multiplyBy3AndAbsolute = compose((num) => num * 3, Math.abs)
+const absoluteAndMultiplyBy3 = pipe((num) => num * 3, Math.abs)
 console.log('compose', multiplyBy3AndAbsolute(-50))
 console.log('pipe', absoluteAndMultiplyBy3(-50))
 
 
-function fn1(){}
-function fn2(){}
-function fn3(){} // Added so that the code does not throw error
+function fn1() { }
+function fn2() { }
+function fn3() { } // Added so that the code does not throw error
 
 fn1(fn2(fn3(50))); // This would be the order of running
 compose(fn1, fn2, fn3)(50) //Right to left
