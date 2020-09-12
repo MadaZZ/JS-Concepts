@@ -1,5 +1,5 @@
 /** IDEMPOTENCE:
- * means that we would get same outputs with same inputs
+ * means that we would get same outputs with same inputs even after calling the function over and over
  * Resource: https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation
 */
 
