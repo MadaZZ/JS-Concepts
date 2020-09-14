@@ -19,7 +19,9 @@ const promise4 = new Promise((resolve, reject) => {
 Promise.all([promise1, promise2, promise3, promise4])
     .then(values => console.log('values show after the max timer ends', values)) // Will run after all the promises are resolved
     .catch((err) => console.log(err)) // If even one is rejected, the operation will land in .catch()
-
+    .finally(() => { console.log('this piece of code runs irrespective of resolve or reject') })
+    // Finally runs after the promise chain is completed no matter if it is resolved or rejected
+    
 // ** chaining fetch requests ** \\
 /**
  * Below code works only on console
