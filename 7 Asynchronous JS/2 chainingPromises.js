@@ -36,4 +36,4 @@ Promise.all(urls.map(url => {
     results.forEach(result => {
         console.log(result); // Log the values returned by the API
     })
-})
+}).catch(err => console.log(err))
