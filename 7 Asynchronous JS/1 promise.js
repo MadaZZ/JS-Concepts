@@ -17,7 +17,10 @@ const promise = new Promise((resolve, reject) => {
 promise
     .then((result) => {
         // throw Error('bigone')
-        return result + ' but i am not sure what happened' 
+        return result + ' but i am not sure what happened'
     })
     .then((result2) => console.log(result2))
-.catch((err) => {console.log(err)}) // catch checks for errors only for the chain items before it
+    .catch((err) => { console.log(err) }) // catch checks for errors only for the chain items before it
+    
+    .finally(() => { console.log('this piece of code runs irrespective of resolve or reject') })
+    // Finally runs after the promise chain is completed no matter if it is resolved or rejected
