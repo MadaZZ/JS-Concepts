@@ -2,7 +2,7 @@
  * The CommonJS module specification is the standard used in Node.js for working with modules.
  * Creating, importing and exporting the modules becomes really easy.
  * But the code here is synchronous and usually not used in browsers.
- * I can be used in browsers too by using tools like browserify and Webpack
+ * It can be used in browsers too by using tools like browserify and Webpack
  * 
  * Resources:
  * - https://flaviocopes.com/commonjs/
