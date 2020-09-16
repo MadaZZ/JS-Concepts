@@ -10,6 +10,7 @@
  * Resources:
  * - https://flaviocopes.com/commonjs/
  * - https://www.oreilly.com/library/view/learning-javascript-design/9781449334840/ch11s03.html
+ * - Comparing all the Module designs: https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm
  * 
 */
 

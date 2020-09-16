@@ -8,6 +8,7 @@
  * Resources:
  * - https://coryrylan.com/blog/javascript-module-pattern-basics
  * - https://medium.com/technofunnel/data-hiding-with-javascript-module-pattern-62b71520bddd#:~:text=The%20Module%20Pattern%20is%20one,the%20scope%20of%20the%20function. 
+ * - Comparing all the Module designs: https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm
  * 
 */
 
