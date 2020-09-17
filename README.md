@@ -10,11 +10,11 @@ A repository to learn core JavaScript concepts by running and playing around wit
 ## Running the Programs
 
 Below are the ways to run the programs in these repos:
-- ### [Using Terminal](https://www.geeksforgeeks.org/how-do-you-run-javascript-script-through-the-terminal/)
-- ### [Using Browser Console](https://developers.google.com/web/tools/chrome-devtools/console/javascript)
-- ###  Using Online IDE
- - [Repl.It](https://repl.it/)
- - [JS Fiddle](https://jsfiddle.net/)
+- [Using Terminal](https://www.geeksforgeeks.org/how-do-you-run-javascript-script-through-the-terminal/)
+- [Using Browser Console](https://developers.google.com/web/tools/chrome-devtools/console/javascript)
+- Using Online IDE
+-- [Repl.It](https://repl.it/)
+-- [JS Fiddle](https://jsfiddle.net/)
 
 
 ## Contributing
@@ -45,12 +45,7 @@ There were a lot of resources I referred while creating this repo:
 [//]: # (HyperLinks)
 
 [GitHub Repository]: https://github.com/MadaZZ/JS-Concepts
-[GitHub Pages]:
 [CONTRIBUTING.md]: https://github.com/madazz/JS-Concepts/blob/master/CONTRIBUTING.md
-[tags]:
-
 [GitHub]: https://github.com/madazz
 [LinkedIn]: https://www.linkedin.com/in/madazz
-
 [contributors]: https://github.com/MadaZZ/JS-Concepts/graphs/contributors
-[license]: 
