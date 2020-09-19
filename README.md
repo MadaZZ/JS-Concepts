@@ -13,8 +13,8 @@ Below are the ways to run the programs in these repos:
 - [Using Terminal](https://www.geeksforgeeks.org/how-do-you-run-javascript-script-through-the-terminal/)
 - [Using Browser Console](https://developers.google.com/web/tools/chrome-devtools/console/javascript)
 - Using Online IDE
--- [Repl.It](https://repl.it/)
--- [JS Fiddle](https://jsfiddle.net/)
+ * [Repl.It](https://repl.it/)
+ * [JS Fiddle](https://jsfiddle.net/)
 
 
 ## Contributing
