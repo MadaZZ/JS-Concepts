@@ -7,7 +7,7 @@ new Date('1900-10-10').lastYear()
 //'1899'
 
 
-//#Bonus
+//Bonus
 // Mofify .map() to print '🗺' at the end of each item.
 console.log([1, 2, 3].map())
 //1🗺, 2🗺, 3🗺
