@@ -24,9 +24,9 @@ Something missing? Can add more resources? Needs more explanation? **Fork this r
 We'd love to have your helping hand on `JS-Concepts`! See [CONTRIBUTING.md] for more information on what we're looking for and how to get started.
 
 
-## Authors
+## Author
 
-#### Sparsh Rana
+#### Sparsh Rana 
 * [GitHub]
 * [LinkedIn]
 
