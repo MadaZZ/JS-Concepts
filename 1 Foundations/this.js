@@ -1,3 +1,6 @@
+// Definition of 'this'
+// 'this' is an object that the function is a property of.
+
 /** this KEYWORD
  * 'this' keyword in JavaScript allows to decide which object should be focal when invoking a function or a method.
  * It allows to reuse functions in different contexts or with different objects.
@@ -12,7 +15,7 @@ const user = {
   name: "ritik",
   age: "22",
   welcome() {
-    alert(`Hello ${this.name} `);
+    console.log(`Hello ${this.name} `);
   },
 };
 
@@ -29,7 +32,7 @@ user.welcome();
 // 2.Explicit Binding
 
 function welcome() {
-  alert(`Hello ${this.name}`);
+  console.log(`Hello ${this.name}`);
 }
 
 const user = {
@@ -54,7 +57,7 @@ welcome.call(user);
  */
 
 function welcome(state, country) {
-  alert(`Hello ${this.name} from ${state} in ${country}`);
+  console.log(`Hello ${this.name} from ${state} in ${country}`);
 }
 
 const user = {
@@ -87,7 +90,7 @@ let section = {
 
   showList() {
     this.students.forEach(function (student) {
-      alert(`${student} , ${this.title}`); //Error: Cannot read property 'title' of undefined
+      console.log(`${student} , ${this.title}`); //Error: Cannot read property 'title' of undefined
     });
   },
 };
@@ -120,7 +123,7 @@ let section = {
 
   showList() {
     this.students.forEach((student) => {
-      alert(`${student} , ${this.title}`);
+      console.log(`${student} , ${this.title}`);
     });
   },
 };
@@ -137,7 +140,7 @@ section.showList();
 //4. window Binding
 
 function getAge() {
-  alert(`My age is ${this.age}`);
+  console.log(`My age is ${this.age}`);
 }
 
 getAge();
