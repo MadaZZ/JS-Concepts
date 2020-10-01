@@ -4,7 +4,7 @@
  * validate that each reference in the chain is valid.
  *
  * The syntax of the optional chaining operator looks like this
- * obj.first?.second?.?third
+ * obj?.first?.second?
  *
  * Resources:
  * - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
