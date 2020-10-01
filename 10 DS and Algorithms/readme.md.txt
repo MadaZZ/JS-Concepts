@@ -1,0 +1,1 @@
+This folder contains all the files for the Data Structures and Algorithm questions asked in an interview 
