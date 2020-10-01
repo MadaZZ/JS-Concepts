@@ -30,3 +30,7 @@ function <Name> {
 */
 
 ````
+
+File references:
+- [promise.js](https://github.com/MadaZZ/JS-Concepts/blob/master/7%20Asynchronous%20JS/1%20promise.js)
+- [modulePatterns.js](https://github.com/MadaZZ/JS-Concepts/blob/master/8%20Modules/1%20modulePatterns.js)
