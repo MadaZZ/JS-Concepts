@@ -1,6 +1,8 @@
 /** PURE FUNCTIONS
  * - When run, they have no side effect.
  * - For same input ----> same output
+ * - Remeber that if the function does not have an explicit return,
+     the function will return undefined.
 */
 
 //Side effects:
