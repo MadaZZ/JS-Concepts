@@ -1,9 +1,9 @@
 /* OPTIONAL CHAINING OPERATOR
  * permits reading the value of a property located deep within
  * a chain of connected objects without having to expressly
- * validate that each reference in the chain is valid.
+ * validate each reference in the chain is valid
  *
- * The syntax of the optional chaining operator looks like this
+ * The syntax of the optional chaining operator looks like this:
  * obj?.first?.second?
  *
  * Resources:
@@ -12,7 +12,8 @@
  */
 
 /* Example 1
- * A person object, each person has a name and a dog, each * * dog  has a name and age.
+ * A person object, each person has a name and a dog, each
+ * dog  has a name and age.
  */
 var person = {
   name: "Marlon",
@@ -38,7 +39,6 @@ console.log(dogName);
 /* But what if a property doesn't exist and you try to
  *  access it? let's try it.
  */
-
 var person = {
   name: "Marlon",
 };
