@@ -8,8 +8,8 @@ The core idea in object-oriented programming is to divide programs into smaller 
 
 Methods are nothing more than properties that hold function values. This is a simple method:<br>
 let rabbit = {};<br>
-	&npsp;rabbit.speak = function(line) {<br>
-	&npsp;console.log(`The person says '${line}'`);<br>
+	&nbsp;rabbit.speak = function(line) {<br>
+	&nbsp;console.log(`The person says '${line}'`);<br>
 };
 
 rabbit.speak("I'm good.");    //The rabbit says I'm good.
@@ -20,12 +20,12 @@ function speak(line) {<br>
 &npsp;console.log(`The ${this.type} rabbit says '${line}'`);<br>
 }<br>
 let whiteRabbit = {<br>
-    &npsp;type: "white",<br>
-    &npsp;speak<br>
+    &nbsp;type: "white",<br>
+    &nbsp;speak<br>
 };<br>
 let hungryRabbit = {<br>
-    &npsp;type: "hungry",<br>
-    &npsp;speak<br>
+    &nbsp;type: "hungry",<br>
+    &nbsp;speak<br>
 };<br>
 whiteRabbit.speak("Oh my ears and whiskers, " + "how late it's getting!"); <br>     // The white rabbit says 'Oh my ears and whiskers, how late it's getting!' <br>
 hungryRabbit.speak("I could use a carrot right now.");     //The hungry rabbit says 'I could use a carrot right now.'   <br>
@@ -37,19 +37,19 @@ speak.call(hungryRabbit, "Tasty!");<br>
 A class defines the shape of a type of object—what methods and properties it has. Such an object is called an instance of the class. Prototypes are useful for defining properties for which all instances of a class share the same value, such as methods. Properties that differ per instance, such as our rabbits&#39; type property, need to be stored directly in the objects themselves. So, to create an instance of a given class, you have to make an object that derives from the proper prototype, but you also have to make sure it, itself, has the properties that instances of this class are supposed to have. This is what a constructor function does.
 
 function makeRabbit(type) {<br>
-	&npsp;let rabbit = Object.create(protoRabbit);<br>
-	&npsp;rabbit.type = type;<br>
-	&npsp;return rabbit;<br>
+	&nbsp;let rabbit = Object.create(protoRabbit);<br>
+	&nbsp;rabbit.type = type;<br>
+	&nbsp;return rabbit;<br>
 }<br>
 
 JavaScript provides a way to make defining this type of function easier. If you put the keyword new in front of a function call, the function is treated as a constructor. This means that an object with the right prototype is automatically created, bound to this in the function, and returned at the end of the function. The prototype object used when constructing objects is found by taking the prototype property of the constructor function.<br>
 
 function Rabbit(type) {<br>
-	&npsp;this.type = type;<br>
+	&nbsp;this.type = type;<br>
 }<br>
 
 Rabbit.prototype.speak = function(line) {<br>
-	&npsp;console.log(`The ${this.type} rabbit says '${line}'`);<br>
+	&nbsp;console.log(`The ${this.type} rabbit says '${line}'`);<br>
 };<br>
 let weirdRabbit = new Rabbit("weird");
 
@@ -63,13 +63,13 @@ Abstraction is a way of hiding the implementation details and showing only the f
 
 function Vehicle()<br>
 {<br>
-	&npsp;this.vehicleName= vehicleName;<br>
-	&npsp;throw new Error("You cannot create an instance of Abstract class");<br>
+	&nbsp;this.vehicleName= vehicleName;<br>
+	&nbsp;throw new Error("You cannot create an instance of Abstract class");<br>
  }<br>
 
 Vehicle.prototype.display=function()<br>
 {<br>
-	&npsp;return this.vehicleName;<br>
+	&nbsp;return this.vehicleName;<br>
 }<br>
 var vehicle=new Vehicle();<br>
 
@@ -77,7 +77,7 @@ var vehicle=new Vehicle();<br>
 When you call the String function (which converts a value to a string) on an object, it will call the toString method on that object to try to create a meaningful string from it.<br>
 
 Rabbit.prototype.toString = function() {<br>
-	&npsp;return `a ${this.type} rabbit`;<br>
+	&nbsp;return `a ${this.type} rabbit`;<br>
 };<br><br>
 console.log(String(blackRabbit)); // a black rabbit<br>
 
@@ -88,21 +88,21 @@ When a piece of code is written to work with objects that have a certain interfa
 JavaScript's prototype system makes it possible to create a new class, much like the old class, but with new definitions for some of its properties. The prototype for the new class derives from the old prototype but adds a new definition for, say, the set method. In object-oriented programming terms, this is called inheritance. The new class inherits properties and behaviour from the old class.
 
 class SymmetricMatrix extends Matrix {<br>
-	        &npsp;super(size, size, (x, y) => {<br>
-            &npsp;if (x < y) return element(y, x);<br>
-            &npsp;else return element(x, y);<br>
+	        &nbsp;super(size, size, (x, y) => {<br>
+            &nbsp;if (x < y) return element(y, x);<br>
+            &nbsp;else return element(x, y);<br>
         });<br>
     }<br>
     set(x, y, value) {<br>
-        &npsp;super.set(x, y, value);<br>
-        &npsp;if (x!= y) {<br>
-            &npsp;&npsp;super.set(y, x, value);<br>
+        &nbsp;super.set(x, y, value);<br>
+        &nbsp;if (x!= y) {<br>
+            &nbsp;&nbsp;super.set(y, x, value);<br>
 });<br>
 }
-	&npsp;set(x, y, value) {<br>
-	&npsp;super.set(x, y, value);<br>
-	&npsp;if (x!= y) {<br>
-	&npsp;super.set(y, x, value);<br>
+	&nbsp;set(x, y, value) {<br>
+	&nbsp;super.set(x, y, value);<br>
+	&nbsp;if (x!= y) {<br>
+	&nbsp;super.set(y, x, value);<br>
 	}<br>
 }}<br>
 
