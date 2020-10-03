@@ -6,14 +6,14 @@ The core idea in object-oriented programming is to divide programs into smaller 
 
 **Methods**
 
-Methods are nothing more than properties that hold function values. This is a simple method:<br>
+Methods are nothing more than properties that hold function values. This is a simple method:
+```javascript
 let rabbit = {};<br>
 	&nbsp;rabbit.speak = function(line) {<br>
 	&nbsp;console.log(`The person says '${line}'`);<br>
 };
-
 rabbit.speak("I'm good.");    //The rabbit says I'm good.
-
+```
 Usually a method needs to do something with the object it was called on when a function is called as a method— looked up as a property and immediately called, as in object.method()— the binding called this in its body automatically points at the object that it was called on.
 
 function speak(line) {<br>
