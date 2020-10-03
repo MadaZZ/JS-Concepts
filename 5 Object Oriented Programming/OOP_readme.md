@@ -12,47 +12,31 @@ let rabbit = {};
 
 rabbit.speak = function(line) {
 
-console.log(`The person says &#39;${line}&#39;`);
+console.log(`The person says '${line}'`);
 
 };
 
-rabbit.speak(&quot;I&#39;m good.&quot;); //The rabbit says &#39;I&#39;m good.&#39;
+rabbit.speak("I'm good.");    //The rabbit says I'm good.
 
 Usually a method needs to do something with the object it was called on when a function is called as a method— looked up as a property and immediately called, as in object.method()— the binding called this in its body automatically points at the object that it was called on.
 
 function speak(line) {
-
-console.log(`The ${this.type} rabbit says &#39;${line}&#39;`);
-
+console.log(`The ${this.type} rabbit says '${line}'`);
 }
 
 let whiteRabbit = {
-
-type: &quot;white&quot;,
-
-speak
-
+    type: "white",
+    speak
 };
-
 let hungryRabbit = {
-
-type: &quot;hungry&quot;,
-
-speak
-
+    type: "hungry",
+    speak
 };
+whiteRabbit.speak("Oh my ears and whiskers, " + "how late it's getting!");      // The white rabbit says 'Oh my ears and whiskers, how late it's getting!'
+hungryRabbit.speak("I could use a carrot right now.");     //The hungry rabbit says 'I could use a carrot right now.'
 
-whiteRabbit.speak(&quot;Oh my ears and whiskers, &quot; + &quot;how late it&#39;s getting!&quot;);
-
-// The white rabbit says &#39;Oh my ears and whiskers, how late it&#39;s getting!&#39;
-
-hungryRabbit.speak(&quot;I could use a carrot right now.&quot;);
-
-//The hungry rabbit says &#39;I could use a carrot right now.&#39;
-
-You can think of this as an extra parameter that is passed in a different way. If you want to pass it explicitly, you can use a function&#39;s call method, which takes the &#39;this&#39; value as its first argument and treats further arguments as normal parameters.
-
-speak.call(hungryRabbit, &quot;Tasty!&quot;);
+You can think of this as an extra parameter that is passed in a different way. If you want to pass it explicitly, you can use a function’s call method, which takes the ‘this’ value as its first argument and treats further arguments as normal parameters.
+speak.call(hungryRabbit, "Tasty!");
 
 Classes
 
