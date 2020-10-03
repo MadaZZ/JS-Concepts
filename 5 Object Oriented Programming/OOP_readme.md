@@ -1,10 +1,12 @@
-Object-oriented programming, a set of techniques that use objects (and related concepts) as the central idea of program organization.
+# Oect Oriented Programming
+Object oriented programming,set of techniques that use objects (and related concepts) as the central idea of program organization.
+***
+## Important Concepts
 
 ### **Encapsulation**
 
 The core idea in object-oriented programming is to divide programs into smaller pieces and make each piece responsible for managing its own state. This way, some knowledge about the way a piece of the program works can be kept local to that piece. Someone working on the rest of the program does not have to remember or even be aware of that knowledge. Whenever these local details change, only the code directly around it needs to be updated. Different pieces of such a program interact with each other through interfaces, limited sets of functions or bindings that provide useful functionality at a more abstract level, hiding their precise implementation. Such program pieces are modelled using objects. Their interface consists of a specific set of methods and properties. Properties that are part of the interface are called public. The others, which outside code should not and cannot touch, are called private. Even though the language doesn&#39;t have this distinction built in, JavaScript programmers are successfully using this idea. Typically, the available interface is described in documentation or comments. It is also common to put an underscore (\_) character at the start of property names to indicate that those properties are private. The idea of separating interface from implementation is called encapsulation.
 
-***
 
 ### **Methods**
 
@@ -37,7 +39,7 @@ You can think of this as an extra parameter that is passed in a different way. I
 ```javascript
 speak.call(hungryRabbit, "Tasty!");
 ```
-***
+
 
 ### **Classes**
 A class defines the shape of a type of object—what methods and properties it has. Such an object is called an instance of the class. Prototypes are useful for defining properties for which all instances of a class share the same value, such as methods. Properties that differ per instance, such as our rabbits&#39; type property, need to be stored directly in the objects themselves. So, to create an instance of a given class, you have to make an object that derives from the proper prototype, but you also have to make sure it, itself, has the properties that instances of this class are supposed to have. This is what a constructor function does.
@@ -67,7 +69,7 @@ Constructors (all functions, in fact) automatically get a property named prototy
 console.log(Object.getPrototypeOf(Rabbit) == Function.prototype); &nbsp; // true
 console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype); &nbsp; // true
 ```
-***
+
 
 ### **Abstraction**
 Abstraction is a way of hiding the implementation details and showing only the functionality to the users. In other words, it ignores the irrelevant details and shows only the required one.
@@ -84,7 +86,7 @@ Vehicle.prototype.display=function()
 }
 var vehicle=new Vehicle();
 ```
-***
+
 
 ### **Polymorphism**
 When you call the String function (which converts a value to a string) on an object, it will call the toString method on that object to try to create a meaningful string from it.
@@ -95,7 +97,7 @@ Rabbit.prototype.toString = function() {
 console.log(String(blackRabbit)); // a black rabbit
 ```
 When a piece of code is written to work with objects that have a certain interface—in this case, a toString method—any kind of object that happens to support this interface can be plugged into the code, and it will just work. This technique is called polymorphism. Polymorphic code can work with values of different shapes, as long as they support the interface it expects.
-***
+
 
 ### **Inheritance**
 
