@@ -1,6 +1,6 @@
 # Oect Oriented Programming
 Object oriented programming,set of techniques that use objects (and related concepts) as the central idea of program organization.
-***
+
 ## Important Concepts
 
 ### **Encapsulation**
@@ -66,8 +66,8 @@ let weirdRabbit = new Rabbit("weird");
 
 Constructors (all functions, in fact) automatically get a property named prototype, which by default holds a plain, empty object that derives from Object.prototype. You can overwrite it with a new object if you want. Or you can add properties to the existing object, as the example does. By convention, the names of constructors are capitalized so that they can easily be distinguished from other functions. It is important to understand the distinction between the way a prototype is associated with a constructor (through its prototype property) and the way objects have a prototype (which can be found with Object.getPrototypeOf). The actual prototype of a constructor is Function.prototype since constructors are functions. Its prototype property holds the prototype used for instances created through it.<br>
 ```javascript
-console.log(Object.getPrototypeOf(Rabbit) == Function.prototype); &nbsp; // true
-console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype); &nbsp; // true
+console.log(Object.getPrototypeOf(Rabbit) == Function.prototype); // true
+console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype); // true
 ```
 
 
