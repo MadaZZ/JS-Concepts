@@ -1,4 +1,4 @@
-# Oect Oriented Programming
+# Object Oriented Programming
 Object oriented programming,set of techniques that use objects (and related concepts) as the central idea of program organization.
 
 ## Important Concepts
