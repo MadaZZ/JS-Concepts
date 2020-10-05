@@ -1,6 +1,6 @@
 # JS Concepts
 
-![GitHub contributors](https://img.shields.io/github/contributors/madazz/JS-Concepts?style=social)
+![GitHub contributors](https://img.shields.io/github/contributors/madazz/JS-Concepts)
 ![GitHub stars](https://img.shields.io/github/stars/madazz/JS-Concepts?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/madazz/JS-Concepts?style=social)
 
@@ -13,8 +13,8 @@ Below are the ways to run the programs in these repos:
 - [Using Terminal](https://www.geeksforgeeks.org/how-do-you-run-javascript-script-through-the-terminal/)
 - [Using Browser Console](https://developers.google.com/web/tools/chrome-devtools/console/javascript)
 - Using Online IDE
--- [Repl.It](https://repl.it/)
--- [JS Fiddle](https://jsfiddle.net/)
+  * [Repl.It](https://repl.it/)
+  * [JS Fiddle](https://jsfiddle.net/)
 
 
 ## Contributing
