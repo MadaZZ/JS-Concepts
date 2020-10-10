@@ -1,7 +1,7 @@
 /**
  * Accessing the JS arguments object, its an array-like object
  * It does not matter if we receive the arguments in the function in any variable or not. Every function will contain the "arguments" object.
- * The type of argument is "any".
+ * Any type of argument can be passed to the function
  */
 function printAllArgs(){
     console.log(typeof arguments);

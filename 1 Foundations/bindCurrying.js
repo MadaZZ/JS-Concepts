@@ -7,7 +7,7 @@
 function multiplyNotBinded(a, b) {
     return a*b;
 }
-// the "undefined" here sets the value of this
+// ".bind" method takes the first argument as the value for "this" (context)
 const multiplyByTwoUsingBind = multiplyNotBinded.bind(undefined, 2);
 console.log(multiplyByTwoUsingBind(4));
 
