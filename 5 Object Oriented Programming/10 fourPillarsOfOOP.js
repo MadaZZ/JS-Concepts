@@ -2,9 +2,7 @@
  * - ENCAPSULATION
  * - ABSTRACTION
  * - INHERITANCE
- * - POLYMORPHISM - Polymorphism provides an ability to call the same method on different JavaScript objects
-*/
-#Polymorphism
+ * - POLYMORPHISM - Polymorphism provides an ability to call the same method on different JavaScript objects */
 class A  
   {  
      display()  
