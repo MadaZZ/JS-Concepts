@@ -1,4 +1,12 @@
-/** FOUR PILLARS OF OBJECT ORIENTED PROGRAMMING
+/* RESOURCES
+   https://www.javatpoint.com/javascript-oops-abstraction
+   https://www.javatpoint.com/javascript-oops-polymorphism
+   https://www.javatpoint.com/javascript-oops-inheritance
+   https://www.javatpoint.com/javascript-oops-encapsulation
+   https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS */
+   
+
+// FOUR PILLARS OF OBJECT ORIENTED PROGRAMMING
 
 /* - ENCAPSULATION- The JavaScript Encapsulation is a process of binding the data with the functions acting on that data. It allows us to control the data 
                      and validate it. To achieve an encapsulation in JavaScript we use var keyword to make data members private and use setter methods 
